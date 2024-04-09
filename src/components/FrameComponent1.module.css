@@ -1,28 +1,26 @@
 .testimonialPanel {
-  align-self: stretch;
+  width: 1245px;
+  height: 388px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-12xl);
-  max-width: 100%;
 }
 .socialMediaIconsChild {
-  align-self: stretch;
+  width: 50.6px;
   height: 17.4px;
   position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  flex-shrink: 0;
 }
 .socialMediaIcons {
-  flex: 1;
+  height: 20.2px;
+  width: 50.6px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-10xs-8);
+  box-sizing: border-box;
 }
 .engagementIndicatorIcon {
   height: 28.9px;
@@ -32,22 +30,22 @@
   object-fit: cover;
 }
 .frameChild {
-  align-self: stretch;
+  width: 50.6px;
   height: 17.4px;
   position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  flex-shrink: 0;
 }
 .socialEngagementPanelInner {
-  flex: 1;
+  height: 20.2px;
+  width: 50.6px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-10xs-8);
+  box-sizing: border-box;
 }
 .socialEngagementPanel {
+  height: 28.9px;
   width: 162px;
   display: flex;
   flex-direction: row;
@@ -55,47 +53,36 @@
   justify-content: flex-start;
   gap: var(--gap-base-9);
 }
-.socialEngagementPanelWrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-6xl) 0 var(--padding-xl);
-}
+.socialEngagementPanelWrapper,
 .testimonialContainer {
-  width: 1245px;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.socialEngagementPanelWrapper {
+  width: 701px;
+  height: 28.9px;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-520xl);
+  box-sizing: border-box;
+}
+.testimonialContainer {
+  height: 494.4px;
+  width: 1245px;
+  flex-direction: column;
   gap: var(--gap-58xl-5);
-  max-width: 100%;
 }
 .testimonialContainerWrapper {
-  align-self: stretch;
+  width: 1340px;
+  height: 509.9px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-base-5) var(--padding-6xl);
+  justify-content: flex-end;
+  padding: 0 var(--padding-76xl) var(--padding-base-5) 0;
   box-sizing: border-box;
-  max-width: 100%;
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-lato);
-}
-@media screen and (max-width: 800px) {
-  .testimonialPanel {
-    gap: var(--gap-mini);
-  }
-  .testimonialContainer {
-    gap: var(--gap-20xl);
-  }
-}
-@media screen and (max-width: 450px) {
-  .testimonialContainer {
-    gap: var(--gap-lgi);
-  }
 }

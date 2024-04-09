@@ -7,7 +7,9 @@ const FrameComponent5: FunctionComponent = () => {
       <div className={styles.frameParent}>
         <div className={styles.welcomeToTheTopGamesWrapper}>
           <h1 className={styles.welcomeToTheContainer}>
-            <span>{`Welcome to the top `}</span>games
+            <span className={styles.welcomeToTheContainer1}>
+              <span>{`Welcome to the top `}</span>games
+            </span>
           </h1>
         </div>
         <div className={styles.gameCategoriesPanel}>
@@ -15,7 +17,7 @@ const FrameComponent5: FunctionComponent = () => {
             <img
               className={styles.frameChild}
               alt=""
-              src="/rectangle-1@2x.png"
+              src="/rectangle-12@2x.png"
             />
             <div className={styles.mewestGames}>Mewest games</div>
           </button>

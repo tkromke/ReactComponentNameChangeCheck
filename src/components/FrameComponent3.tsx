@@ -14,21 +14,21 @@ const FrameComponent3: FunctionComponent = () => {
       />
       <FrameComponent4
         rectangle6="/rectangle-10@2x.png"
-        rectangle9="/rectangle-11@2x.png"
+        rectangle9="/rectangle-111@2x.png"
         ellipse5="/ellipse-6@2x.png"
         cameronWilliamson="Dianne Russell"
         gillette="Louis Vuitton"
-        propMinWidth="125px"
-        propMinWidth1="64px"
+        propMinWidth="unset"
+        propMinWidth1="unset"
       />
       <FrameComponent4
-        rectangle6="/rectangle-12@2x.png"
-        rectangle9="/rectangle-13@2x.png"
+        rectangle6="/rectangle-121@2x.png"
+        rectangle9="/rectangle-131@2x.png"
         ellipse5="/ellipse-7@2x.png"
         cameronWilliamson="Jane Cooper"
         gillette="MasterCard"
-        propMinWidth="106px"
-        propMinWidth1="58px"
+        propMinWidth="unset"
+        propMinWidth1="unset"
       />
       <div className={styles.teamMemberCards}>
         <img
@@ -70,7 +70,7 @@ const FrameComponent3: FunctionComponent = () => {
             <img
               className={styles.frameItem}
               alt=""
-              src="/rectangle-1@2x.png"
+              src="/rectangle-13@2x.png"
             />
             <div className={styles.liveDemo}>Live Demo</div>
           </button>
@@ -82,8 +82,8 @@ const FrameComponent3: FunctionComponent = () => {
         ellipse5="/ellipse-9@2x.png"
         cameronWilliamson="Wade Warren"
         gillette="Gillette"
-        propMinWidth="117px"
-        propMinWidth1="37px"
+        propMinWidth="unset"
+        propMinWidth1="unset"
       />
       <FrameComponent4
         rectangle6="/rectangle-16@2x.png"
@@ -91,8 +91,8 @@ const FrameComponent3: FunctionComponent = () => {
         ellipse5="/ellipse-10@2x.png"
         cameronWilliamson="Robert Fox"
         gillette="L'Oréal"
-        propMinWidth="93px"
-        propMinWidth1="34px"
+        propMinWidth="unset"
+        propMinWidth1="unset"
       />
     </div>
   );

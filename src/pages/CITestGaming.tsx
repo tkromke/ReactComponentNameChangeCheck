@@ -37,8 +37,10 @@ const CITestGaming: FunctionComponent = () => {
         <div className={styles.featuredContentInner}>
           <div className={styles.chooseYourFavoriteGamesParent}>
             <h1 className={styles.chooseYourFavoriteContainer}>
-              <span>{`choose your `}</span>favorite
-              <span> games</span>
+              <span className={styles.chooseYourFavoriteContainer1}>
+                <span>{`choose your `}</span>favorite
+                <span> games</span>
+              </span>
             </h1>
             <div className={styles.offerSneakPeeksAndPreviewsWrapper}>
               <div className={styles.offerSneakPeeks}>
@@ -57,8 +59,10 @@ const CITestGaming: FunctionComponent = () => {
             <div className={styles.frameGroup}>
               <div className={styles.discoverTheVirtualRealityGParent}>
                 <h1 className={styles.discoverTheVirtualContainer}>
-                  <span>{`Discover the `}</span>Virtual
-                  <span>{` Reality Gaming `}</span>
+                  <span className={styles.discoverTheVirtualContainer1}>
+                    <span>{`Discover the `}</span>Virtual
+                    <span>{` Reality Gaming `}</span>
+                  </span>
                 </h1>
                 <div className={styles.visualElements}>
                   <div className={styles.designShape1} />
@@ -86,7 +90,7 @@ const CITestGaming: FunctionComponent = () => {
             <img
               className={styles.callToActionChild}
               alt=""
-              src="/rectangle-1.svg"
+              src="/rectangle-11.svg"
             />
             <b className={styles.playNow}>Play now</b>
           </button>
@@ -213,17 +217,17 @@ const CITestGaming: FunctionComponent = () => {
         <img
           className={styles.visualElementsIcon1}
           alt=""
-          src="/visual-elements.svg"
+          src="/visual-elements1.svg"
         />
         <img
           className={styles.visualElementsIcon2}
           alt=""
-          src="/visual-elements.svg"
+          src="/visual-elements2.svg"
         />
         <img
           className={styles.visualElementsIcon3}
           alt=""
-          src="/visual-elements.svg"
+          src="/visual-elements3.svg"
         />
       </section>
       <FrameComponent />

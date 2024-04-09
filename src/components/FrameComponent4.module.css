@@ -1,9 +1,6 @@
 .teamMemberCardsChild,
 .teamMemberCardsItem {
   border-radius: var(--br-3xs);
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
   object-fit: cover;
 }
 .teamMemberCardsChild {
@@ -15,19 +12,25 @@
   right: 0;
   bottom: 0;
   left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 }
 .teamMemberCardsItem {
-  align-self: stretch;
-  flex: 1;
+  width: 361px;
+  height: 265px;
   position: relative;
   z-index: 1;
 }
 .corePhilosophies {
+  width: 204px;
+  height: 27px;
   position: relative;
   letter-spacing: 0.04em;
   line-height: 110.6%;
   text-transform: capitalize;
   font-weight: 500;
+  display: inline-block;
   z-index: 1;
 }
 .memberAvatarsIcon {
@@ -40,53 +43,65 @@
 }
 .cameronWilliamson,
 .gillette {
+  width: 175px;
+  height: 20px;
   position: relative;
   letter-spacing: 0.04em;
   line-height: 110.6%;
   text-transform: capitalize;
   font-weight: 500;
+  display: inline-block;
   z-index: 1;
 }
-.cameronWilliamson {
-  white-space: nowrap;
-}
 .gillette {
+  width: 34px;
+  height: 11px;
   font-size: var(--font-size-3xs);
-  display: inline-block;
-  min-width: 37px;
 }
+.memberNameContainers {
+  width: 175px;
+  height: 39px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.memberAvatarsParent,
 .memberNameContainers,
 .memberNameContainersWrapper {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.memberNameContainers {
-  gap: var(--gap-5xs);
-}
 .memberNameContainersWrapper {
+  height: 43px;
+  width: 175px;
+  flex-direction: column;
   padding: var(--padding-9xs) 0 0;
+  box-sizing: border-box;
 }
 .memberAvatarsParent {
+  width: 238px;
+  height: 53px;
   flex-direction: row;
   gap: var(--gap-3xs);
   font-size: var(--font-size-lg);
 }
-.memberAvatarsParent,
 .memberDataContainers,
 .memberDetailContainers {
+  height: 98px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .memberDetailContainers {
+  width: 238px;
   flex-direction: column;
   gap: var(--gap-lg);
 }
 .memberDataContainers {
+  width: 245px;
   flex-direction: row;
-  padding: 0 var(--padding-6xs);
+  padding: 0 0 0 var(--padding-6xs);
+  box-sizing: border-box;
 }
 .frameChild {
   height: 52px;
@@ -97,48 +112,47 @@
   max-width: 100%;
 }
 .liveDemo {
+  height: 21.7px;
+  width: 99px;
   position: relative;
   font-size: var(--font-size-lg);
-  line-height: 21.7px;
+  line-height: 110.6%;
   text-transform: uppercase;
   font-weight: 800;
   font-family: var(--font-lato);
   color: var(--color-white);
   text-align: left;
-  display: inline-block;
-  min-width: 99px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
   z-index: 1;
 }
 .memberInfoPanels,
 .teamMemberCards,
 .vectorParent {
+  width: 361px;
   display: flex;
   align-items: flex-start;
-  max-width: 100%;
+  justify-content: flex-start;
 }
 .vectorParent {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-base-2) var(--padding-xl) var(--padding-base-1);
+  padding: var(--padding-base-2) var(--padding-112xl) var(--padding-base-1);
   background-color: transparent;
-  align-self: stretch;
+  height: 52px;
   flex-direction: row;
-  justify-content: center;
   box-sizing: border-box;
-  background-image: url(/public/rectangle-1@2x.png);
+  background-image: url(/public/rectangle-13@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  white-space: nowrap;
   z-index: 1;
 }
 .memberInfoPanels,
 .teamMemberCards {
+  height: 176px;
   flex-direction: column;
-  justify-content: flex-start;
-}
-.memberInfoPanels {
-  align-self: stretch;
   gap: var(--gap-7xl);
 }
 .teamMemberCards {
@@ -152,16 +166,4 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-lato);
-}
-@media screen and (max-width: 800px) {
-  .teamMemberCards {
-    padding-bottom: var(--padding-11xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .corePhilosophies {
-    font-size: var(--font-size-lgi);
-    line-height: 21px;
-  }
 }
