@@ -14,11 +14,11 @@
   width: 36px;
   position: relative;
   object-fit: cover;
-  min-height: 36px;
 }
 .gamingSpaning {
   margin: 0;
-  align-self: stretch;
+  width: 289px;
+  height: 33px;
   position: relative;
   font-size: inherit;
   letter-spacing: 0.04em;
@@ -26,6 +26,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: inherit;
+  display: inline-block;
 }
 .featureIndicatorsParent,
 .gamingSpaningWrapper {
@@ -34,25 +35,28 @@
   justify-content: flex-start;
 }
 .gamingSpaningWrapper {
-  flex: 1;
+  height: 34px;
+  width: 289px;
   flex-direction: column;
   padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
 }
 .featureIndicatorsParent {
+  height: 36px;
   width: 343px;
   flex-direction: row;
   gap: var(--gap-lg);
-  max-width: 100%;
 }
 .frameChild {
   height: 36px;
   width: 36px;
   position: relative;
   object-fit: cover;
-  min-height: 36px;
 }
 .actionPacked {
   margin: 0;
+  width: 293px;
+  height: 33px;
   position: relative;
   font-size: inherit;
   letter-spacing: 0.04em;
@@ -60,6 +64,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: inherit;
+  display: inline-block;
 }
 .actionPackedWrapper,
 .starParent {
@@ -68,23 +73,28 @@
   justify-content: flex-start;
 }
 .actionPackedWrapper {
+  height: 34px;
+  width: 293px;
   flex-direction: column;
   padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
 }
 .starParent {
+  height: 36px;
+  width: 347px;
   flex-direction: row;
   gap: var(--gap-lg);
-  max-width: 100%;
 }
 .frameItem {
   height: 36px;
   width: 36px;
   position: relative;
   object-fit: cover;
-  min-height: 36px;
 }
 .mindBending {
   margin: 0;
+  width: 266px;
+  height: 33px;
   position: relative;
   font-size: inherit;
   letter-spacing: 0.04em;
@@ -92,6 +102,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: inherit;
+  display: inline-block;
 }
 .mindBendingWrapper,
 .starGroup {
@@ -100,10 +111,15 @@
   justify-content: flex-start;
 }
 .mindBendingWrapper {
+  height: 34px;
+  width: 266px;
   flex-direction: column;
   padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
 }
 .starGroup {
+  height: 36px;
+  width: 320px;
   flex-direction: row;
   gap: var(--gap-lg);
 }
@@ -112,11 +128,11 @@
   width: 36px;
   position: relative;
   object-fit: cover;
-  min-height: 36px;
 }
 .collectionOgGames {
   margin: 0;
-  align-self: stretch;
+  width: 394px;
+  height: 33px;
   position: relative;
   font-size: inherit;
   letter-spacing: 0.04em;
@@ -124,17 +140,17 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: inherit;
+  display: inline-block;
 }
 .collectionOgGamesWrapper {
-  flex: 1;
+  height: 34px;
+  width: 394px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-12xs) 0 0;
   box-sizing: border-box;
-  min-width: 259px;
-  max-width: 100%;
 }
 .featureCarousel,
 .pageHeaderParent,
@@ -142,62 +158,31 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 .starContainer {
+  height: 36px;
   width: 448px;
-  justify-content: flex-start;
-  gap: var(--gap-sm);
-  max-width: 100%;
+  gap: var(--gap-lg);
 }
 .featureCarousel,
 .pageHeaderParent {
+  width: 1611px;
   z-index: 1;
 }
 .featureCarousel {
-  justify-content: center;
+  height: 36px;
   gap: var(--gap-32xl);
-  max-width: 100%;
 }
 .pageHeaderParent {
   margin-right: -87px;
   margin-bottom: 20.600000000000364px;
-  justify-content: flex-start;
+  height: 90px;
   padding: var(--padding-8xl) 0;
   box-sizing: border-box;
   position: relative;
-  max-width: 112%;
-  flex-shrink: 0;
   text-align: left;
   font-size: var(--font-size-11xl);
   color: var(--color-white);
   font-family: var(--font-ondo);
-}
-@media screen and (max-width: 1350px) {
-  .featureCarousel {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 800px) {
-  .actionPacked,
-  .collectionOgGames,
-  .gamingSpaning,
-  .mindBending {
-    font-size: var(--font-size-5xl);
-    line-height: 27px;
-  }
-  .featureCarousel {
-    gap: var(--gap-6xl);
-  }
-}
-@media screen and (max-width: 450px) {
-  .actionPacked,
-  .collectionOgGames,
-  .gamingSpaning,
-  .mindBending {
-    font-size: var(--font-size-lg);
-    line-height: 20px;
-  }
-  .starContainer {
-    flex-wrap: wrap;
-  }
 }

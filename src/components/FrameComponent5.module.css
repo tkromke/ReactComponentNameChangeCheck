@@ -1,6 +1,10 @@
+.welcomeToTheContainer1 {
+  width: 100%;
+}
 .welcomeToTheContainer {
   margin: 0;
-  flex: 1;
+  height: 154px;
+  width: 718px;
   position: relative;
   font-size: inherit;
   letter-spacing: 0.04em;
@@ -8,18 +12,19 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: inherit;
-  display: inline-block;
-  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .welcomeToTheTopGamesWrapper {
-  width: 850px;
+  width: 784px;
+  height: 154px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 var(--padding-47xl);
+  padding: 0 0 0 var(--padding-47xl);
   box-sizing: border-box;
-  max-width: 100%;
 }
 .frameChild {
   height: 64px;
@@ -29,15 +34,18 @@
   display: none;
 }
 .mewestGames {
+  height: 20px;
+  width: 153px;
   position: relative;
   font-size: var(--font-size-lg);
   letter-spacing: 0.04em;
-  line-height: 20px;
+  line-height: 110.6%;
   text-transform: uppercase;
   font-weight: 800;
   font-family: var(--font-lato);
   color: var(--color-white);
   text-align: left;
+  display: inline-block;
   z-index: 1;
 }
 .vectorParent {
@@ -45,11 +53,14 @@
   border: 0;
   padding: var(--padding-3xl) var(--padding-24xl);
   background-color: transparent;
+  height: 64px;
+  width: 241px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  background-image: url(/public/rectangle-1@2x.png);
+  box-sizing: border-box;
+  background-image: url(/public/rectangle-12@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -60,8 +71,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 221px;
+  height: 64px;
   z-index: 2;
 }
 .latestGames {
@@ -70,7 +81,7 @@
   left: 39px;
   font-size: var(--font-size-lg);
   letter-spacing: 0.04em;
-  line-height: 20px;
+  line-height: 110.6%;
   text-transform: uppercase;
   font-weight: 500;
   font-family: var(--font-lato);
@@ -92,12 +103,9 @@
 }
 .gameTypeButtonsItem {
   position: absolute;
-  width: calc(100% - 5px);
   top: 0;
-  right: 5px;
   left: 0;
-  max-width: 100%;
-  overflow: hidden;
+  width: 221px;
   height: 64px;
   z-index: 3;
 }
@@ -107,14 +115,12 @@
   left: 41px;
   font-size: var(--font-size-lg);
   letter-spacing: 0.04em;
-  line-height: 20px;
+  line-height: 110.6%;
   text-transform: uppercase;
   font-weight: 500;
   font-family: var(--font-lato);
   color: var(--color-white);
   text-align: left;
-  display: inline-block;
-  min-width: 127px;
   z-index: 4;
 }
 .gameTypeButtons1 {
@@ -133,8 +139,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 211px;
+  height: 64px;
   z-index: 4;
 }
 .sportGames {
@@ -143,7 +149,7 @@
   left: 41px;
   font-size: var(--font-size-lg);
   letter-spacing: 0.04em;
-  line-height: 20px;
+  line-height: 110.6%;
   text-transform: uppercase;
   font-weight: 500;
   font-family: var(--font-lato);
@@ -163,55 +169,34 @@
   debug_commit: afebfb9;
   margin-left: -9px;
 }
+.categoryHeaderInner,
+.frameParent,
 .gameCategoriesPanel {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 var(--padding-11xs) 0 0;
-  row-gap: 20px;
+}
+.gameCategoriesPanel {
+  width: 874px;
+  height: 64px;
+  flex-direction: row;
 }
 .categoryHeaderInner,
 .frameParent {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
+  height: 239px;
 }
 .frameParent {
+  width: 874px;
   flex-direction: column;
-  justify-content: flex-start;
   gap: var(--gap-2xl);
 }
 .categoryHeaderInner {
-  align-self: stretch;
+  width: 1057px;
   flex-direction: row;
-  justify-content: center;
-  padding: 0 var(--padding-6xl) 0 var(--padding-xl);
+  padding: 0 0 0 var(--padding-164xl);
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-47xl);
   color: var(--color-white);
   font-family: var(--font-ondo);
-}
-@media screen and (max-width: 1125px) {
-  .welcomeToTheTopGamesWrapper {
-    padding-left: var(--padding-14xl);
-    padding-right: var(--padding-14xl);
-    box-sizing: border-box;
-  }
-  .gameCategoriesPanel {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 800px) {
-  .welcomeToTheContainer {
-    font-size: var(--font-size-34xl);
-    line-height: 62px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .welcomeToTheContainer {
-    font-size: var(--font-size-21xl);
-    line-height: 46px;
-  }
 }

@@ -1,16 +1,17 @@
+.board,
+.products {
+  display: inline-block;
+}
 .board {
+  height: 34px;
   width: 98px;
   position: relative;
   letter-spacing: 0.04em;
   line-height: 110.6%;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
   z-index: 1;
 }
 .products {
   font-weight: 800;
-  display: inline-block;
   min-width: 103px;
 }
 .about,
@@ -40,23 +41,23 @@
 .about {
   min-width: 66px;
 }
-.navigationItems {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-}
+.navigationItems,
 .navigationItemsWrapper {
   width: 641px;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.navigationItems {
+  height: 20px;
+  flex-direction: row;
+  gap: var(--gap-21xl);
+}
+.navigationItemsWrapper {
+  height: 26.8px;
+  flex-direction: column;
   padding: var(--padding-6xs-8) 0 0;
   box-sizing: border-box;
-  max-width: 100%;
   font-size: var(--font-size-lg);
   font-family: var(--font-lato);
 }
@@ -65,44 +66,21 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  max-width: 100%;
 }
 .navigation {
+  height: 34px;
   width: 952px;
-  justify-content: space-between;
-  gap: var(--gap-xl);
+  justify-content: flex-start;
+  gap: var(--gap-194xl);
 }
 .navigationWrapper {
-  align-self: stretch;
-  justify-content: center;
-  padding: 0 var(--padding-183xl) var(--padding-13xl-5) var(--padding-xl);
+  width: 1287.2px;
+  height: 66.5px;
+  justify-content: flex-end;
+  padding: 0 var(--padding-316xl-2) var(--padding-13xl-5) 0;
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-11xl-8);
   color: var(--color-white);
   font-family: var(--font-ondo);
-}
-@media screen and (max-width: 1350px) {
-  .navigationWrapper {
-    padding-right: var(--padding-82xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 800px) {
-  .navigationItems {
-    display: none;
-  }
-  .navigationItemsWrapper {
-    width: 0;
-  }
-  .navigationWrapper {
-    padding-right: var(--padding-31xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .navigationWrapper {
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
-  }
 }

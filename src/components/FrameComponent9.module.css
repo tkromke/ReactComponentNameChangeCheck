@@ -6,6 +6,8 @@
   display: none;
 }
 .buyNow {
+  height: 22px;
+  width: 104px;
   position: relative;
   font-size: var(--font-size-xl);
   letter-spacing: 0.04em;
@@ -15,7 +17,6 @@
   font-family: var(--font-ondo);
   color: var(--color-white);
   text-align: left;
-  min-width: 104px;
   z-index: 1;
 }
 .vectorParent {
@@ -23,23 +24,25 @@
   border: 0;
   padding: var(--padding-7xl) var(--padding-45xl);
   background-color: transparent;
+  height: 74px;
+  width: 232px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  box-sizing: border-box;
   background-image: url(/public/rectangle-1@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  white-space: nowrap;
   z-index: 1;
 }
 .buttonItemsChild {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 232px;
+  height: 74px;
   z-index: 2;
 }
 .playNow {
@@ -50,10 +53,8 @@
   letter-spacing: 0.04em;
   line-height: 110.6%;
   text-transform: uppercase;
-  display: inline-block;
   font-family: var(--font-ondo);
   text-align: left;
-  min-width: 117px;
   z-index: 3;
 }
 .buttonItems {
@@ -62,23 +63,14 @@
   padding: 0;
   background-color: transparent;
   height: 74px;
-  flex: 1;
+  width: 232px;
   position: relative;
-  min-width: 151px;
 }
 .actionButtons {
   width: 464px;
+  height: 74px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 100%;
-  row-gap: 20px;
-}
-@media screen and (max-width: 450px) {
-  .playNow {
-    font-size: var(--font-size-base);
-    line-height: 18px;
-  }
 }

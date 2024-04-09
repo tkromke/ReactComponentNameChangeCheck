@@ -28,7 +28,7 @@ const FrameComponent9: FunctionComponent<FrameComponent9Type> = ({
         <img
           className={styles.buttonItemsChild}
           alt=""
-          src="/rectangle-1.svg"
+          src="/rectangle-11.svg"
         />
         <b className={styles.playNow}>Play now</b>
       </button>

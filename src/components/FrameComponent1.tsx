@@ -22,7 +22,7 @@ const FrameComponent1: FunctionComponent = () => {
             mcDonalds="General Electric"
             propWidth="235.4px"
             propLineHeight="110.6%"
-            propMinWidth="89px"
+            propMinWidth="unset"
             propRight="33.7px"
           />
         </div>

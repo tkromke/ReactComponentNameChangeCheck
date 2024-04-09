@@ -7,8 +7,10 @@ const FrameComponent8: FunctionComponent = () => {
     <section className={styles.frameParent}>
       <div className={styles.letYourMindExploreNewWorlWrapper}>
         <b className={styles.letYourMindContainer}>
-          <span>{`Let your mind `}</span>explore
-          <span> new world</span>
+          <span className={styles.letYourMindContainer1}>
+            <span>{`Let your mind `}</span>explore
+            <span> new world</span>
+          </span>
         </b>
       </div>
       <div className={styles.callToAction}>

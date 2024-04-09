@@ -1,11 +1,8 @@
 .previewImageIcon {
-  align-self: stretch;
-  flex: 1;
+  width: 451.1px;
+  height: 367px;
   position: relative;
   border-radius: 11.22px;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
   object-fit: cover;
   flex-shrink: 0;
   debug_commit: afebfb9;
@@ -21,7 +18,6 @@
   justify-content: flex-end;
   padding: 0 0 var(--padding-19xl-3);
   box-sizing: border-box;
-  max-width: 100%;
 }
 .groupIcon,
 .groupIcon1,
@@ -49,17 +45,21 @@
 .groupIcon3 {
   left: 359.4px;
 }
-.vectorIcon {
-  display: none;
-}
 .groupIcon4,
 .vectorIcon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+}
+.vectorIcon {
+  width: 690.2px;
+  height: 441.6px;
+  display: none;
+}
+.groupIcon4 {
+  width: 658.8px;
+  height: 417.9px;
 }
 .groupIcon5 {
   position: absolute;
@@ -74,8 +74,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 621.9px;
+  height: 392.3px;
 }
 .groupIcon7 {
   top: 367px;
@@ -88,12 +88,9 @@
 .groupParent {
   position: absolute;
   top: 12.6px;
-}
-.groupParent {
-  height: calc(100% - 25.6px);
-  bottom: 13px;
   left: 16px;
   width: 621.9px;
+  height: 392.3px;
 }
 .groupIcon8 {
   left: 13.9px;
@@ -103,24 +100,25 @@
 }
 .iconDetails {
   position: absolute;
-  height: calc(100% - 23.7px);
   top: 11.8px;
-  bottom: 11.9px;
   left: 15.7px;
   width: 658.8px;
+  height: 417.9px;
 }
-.previewGraphicIcon,
+.previewGraphicIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 327px;
+  height: 43px;
+  z-index: 4;
+}
 .vectorIcon1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-}
-.previewGraphicIcon {
-  z-index: 4;
-}
-.vectorIcon1 {
+  width: 308.6px;
+  height: 40.6px;
   object-fit: cover;
   display: none;
 }
@@ -143,11 +141,10 @@
   left: 9.1px;
   width: 308.6px;
   height: 40.6px;
-  background-image: url(/public/vector@2x.png);
+  background-image: url(/public/vector1@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  white-space: nowrap;
   z-index: 5;
 }
 .previewImage {
@@ -178,10 +175,9 @@
 }
 .vectorParent {
   position: absolute;
-  width: calc(100% - 18.2px);
   top: 48.8px;
-  right: 8.7px;
   left: 9.5px;
+  width: 690.2px;
   height: 441.6px;
   background-image: url(/public/vector@2x.png);
   background-size: cover;
@@ -207,8 +203,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 78.1px;
+  height: 78.1px;
 }
 .frameIcon {
   top: 25.8px;
@@ -228,9 +224,8 @@
 }
 .galleryItems {
   height: 494px;
-  flex: 1;
+  width: 708.4px;
   position: relative;
-  max-width: 100%;
 }
 .frameChild,
 .group {
@@ -238,6 +233,7 @@
   debug_commit: afebfb9;
 }
 .group {
+  height: 494px;
   width: 708.5px;
   display: flex;
   flex-direction: row;
@@ -245,58 +241,29 @@
   justify-content: flex-start;
 }
 .frameChild {
-  align-self: stretch;
-  flex: 1;
+  width: 451.1px;
+  height: 367px;
   position: relative;
   border-radius: 11.22px;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
   object-fit: cover;
 }
 .visualGallery,
 .visualGalleryInner {
-  display: flex;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-.visualGalleryInner {
   height: 405.3px;
   width: 451.1px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-19xl-3);
+  box-sizing: border-box;
 }
 .visualGallery {
-  align-self: stretch;
+  width: 1440px;
+  height: 525.8px;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
   padding: 0 var(--padding-346xl-1) var(--padding-12xl-8);
   gap: var(--gap-11xl-1);
-}
-@media screen and (max-width: 1350px) {
-  .visualGallery {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: var(--padding-163xl);
-    padding-right: var(--padding-163xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 800px) {
-  .visualGallery {
-    gap: var(--gap-mini);
-    padding-left: var(--padding-72xl);
-    padding-right: var(--padding-72xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .visualGallery {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
-  }
 }
